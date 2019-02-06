@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Xinfin testnet faucet</title>
+    <link rel="stylesheet" type="text/css" href="./assets/stylesheets/application.css">
+    <link rel="apple-touch-icon" href="./favicons/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./favicons/favicon-192x192.png">
+    <link rel="mask-icon" color="#6151cc" href="./favicons/safari-pinned-tab.svg">
+    <link rel="manifest" href="./favicons/manifest.webmanifest">
+    <link href="./favicons/favicon.ico" rel="icon" type="image/x-icon">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+  </head>
+  <body>
+    <section class="content">
+      <form action="/" method="POST" id="faucetForm">
+        <div class="request-tokens">
+          <h1>Xinfin testnet faucet</h1>
+            <input type="text" id="receiver" name="receiver" placeholder="Enter your address here to receive XDC"/>
+            <h2>
+              Please use <a href="https://www.xinfin.org/">http://xinfin.network/#getTestXDC</a> RPC to connect<br>
+              to the Xinfin testnet.
+            </h2>
+            <div class="text-xs-center">
+              <div class="g-recaptcha" data-sitekey="6Ld1l2oUAAAAAAN582Y0wrznMePr1qjsctIjM0gr"></div>
+            </div>
+            <div class="button-faucet">
+            <button type="submit" id="requestTokens" class="request-tokens-button">Request 15 XDC</button>
+            </div>
+        </div>
+      </form>
+    </section>
+    <div class="loading-container hidden">
+      <div class="loading">
+        <div class="loading-i"></div>
+        <div class="loading-i"></div>
+        <div class="loading-i"></div>
+        <div class="loading-i"></div>
+        <div class="loading-i"></div>
+        <div class="loading-i"></div>
+      </div>
+    </div>
+    <script src="./assets/javascripts/application.js?v=1.4" type="text/javascript"></script>
+  </body>
+</html>
